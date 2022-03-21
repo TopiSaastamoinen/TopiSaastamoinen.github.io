@@ -1,0 +1,191 @@
+/* Tyylit */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+:root {
+    --teksti: #333333;
+    --tausta: #eeeeee;
+    --teksti-vaalea: #dddddd;
+    --bg-dark: #444444;
+    --highlight: #a5bd39;
+    --taulukko-reuna: #335b2c;
+    --taulukko-vaalea: #d1e08c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Yleiskäyttöisiä tyylejä */
+
+/* Vertikaalinen keskittäminen */
+.v-center {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+/* Horisonttaalinen oikea tasaus */
+.h-right {
+    position: absolute;
+    right: 5px;
+}
+
+.highlight {
+    color: var(--highlight);
+    display: inline-block;
+    transform: rotate(6.5deg);
+}
+
+.highlight2 {
+    color: var(--teksti-vaalea);
+    display: inline-block;
+    transform: rotate(-4deg);
+    padding: 2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti);
+}
+
+/* Header */
+header {
+    background-color: var(--bg-dark);
+    color: var(--teksti-vaalea);
+    padding: 8px;
+    height: 85px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: var(--highlight) solid 5px;
+}
+
+header .logo {
+    float: left;
+    font-size: 2em;
+
+}
+
+header .logo img {
+    height: 47px;
+    width: 50px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-left: 3px;
+    display: block;
+    float: left;
+    transform: rotate(-35deg);
+}
+
+header nav a {
+    display: inline-block;
+    font-size: 1.5em;
+    color: var(--teksti-vaalea);
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+header nav a:hover {
+    color: var(--teksti);
+    background-color: var(--highlight);
+}
+
+/* Ammattitaitovaatimukset */
+.taitovaatimukset {
+    padding: 0;
+
+}
+
+.taitovaatimukset > li {
+    list-style-type: none;
+    
+}
+
+.taitovaatimukset > li > ul {
+    border-left: var(--highlight) solid 5px;
+}
+
+.taitovaatimukset > li > ul li {
+    padding: 0;
+    list-style-type: square;
+}
+
+.ingressi {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.6em;
+}
+
+.ingressi::first-letter {
+    float:left;
+    font-size: 3.2em;
+    line-height: 1em;
+    font-weight: bold;
+    margin-right: 0.1em;
+}
+
+/* main-lohkon tyylit */
+main {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding-top: 90px;
+}
+
+/* section-lohkon tyylit */
+section {
+    max-width: 1100px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* Tutkinnonosat */
+.tutkinnonosat a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--bg-dark);
+    color: var(--teksti-vaalea);
+    border: 1px solid var(--teksti);
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.tutkinnonosat a:hover{
+    color: var(--teksti);
+    background-color: var(--highlight);
+}
+
+/* Taulukko */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, td {
+    text-align: left;
+    padding: 8px;
+    border: 8px inset var(--taulukko-reuna);
+}
+
+tr:nth-child(even){background-color: var(--taulukko-vaalea)}
+
+th {
+    background-color: var(--highlight);
+    color: var(--teksti);
+    
+  }
+
+/* Footer */
+footer {
+    background-color: var(--bg-dark);
+    color: var(--teksti-vaalea);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
