@@ -114,20 +114,6 @@ header nav a:hover {
     list-style-type: square;
 }
 
-.ingressi {
-    font-size: 1.2em;
-    font-style: italic;
-    line-height: 1.6em;
-}
-
-.ingressi::first-letter {
-    float:left;
-    font-size: 3.2em;
-    line-height: 1em;
-    font-weight: bold;
-    margin-right: 0.1em;
-}
-
 /* main-lohkon tyylit */
 main {
     font-size: 1.5em;
@@ -140,25 +126,6 @@ section {
     max-width: 1100px;
     width: 70%;
     margin: 20px auto;
-}
-
-/* Tutkinnonosat */
-.tutkinnonosat a{
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--bg-dark);
-    color: var(--teksti-vaalea);
-    border: 1px solid var(--teksti);
-    padding: 30px;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.tutkinnonosat a:hover{
-    color: var(--teksti);
-    background-color: var(--highlight);
 }
 
 /* Taulukko */
